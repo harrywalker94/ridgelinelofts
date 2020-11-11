@@ -627,6 +627,9 @@ video {
     .video-home {
         height: 300px;
     }
+    .video-fluid {
+        height: 300px;
+    }
 }
 
 .quote {
