@@ -40,33 +40,121 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-    <!-- Navigation -->
-    <div id="navigation" class="fixed-top">
-        <div class="container">
-            <div class="logo float-left">
-                <a href="index.html" class="scrollto"><img src="images/logo.png" alt="" class="img-fluid" /></a>
-            </div>
+    <div class="nav-desktop fixed-top" id="nav-desktop">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header justify-content-center">
+                    <div class="logo">
+                        <a href="index.html" class="scrollto"><img id="nav-logo" src="images/blue-logo.png" alt="" class="img-fluid" /></a>
+                    </div>
+                </div>
 
-            <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+                <ul class="nav navbar-nav navbar-right align-items-center nav-contact">
+                    <li>
+                        <div class="">
+                            <a href="#" id="nav-contact" class="text-uppercase" style="color: #0998dd"><strong style="color: #335c94"
+                    >Call us for free on: <span class="number">01279 423864</span></strong
+                  ></a
+                >
+              </div>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <ul class="nav align-items-center justify-content-center" id="nav-top">
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            id="nav-link"
+            href="about.html"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+            <a
+              class="nav-link text-uppercase font-weight-bold"
+              id="nav-link"
+              href="loft-conversions.html"
+              >Loft Conversions</a
+            >
+          </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="process.html"
+            id="nav-link"
+            >Process</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="portfolio.html"
+            id="nav-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="gallery.html"
+            id="nav-link"
+            >Gallery</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="testimonials.html"
+            id="nav-link"
+            >Testimonials</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="faq.html"
+            id="nav-link"
+            >FAQ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="contact.html"
+            id="nav-link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div id="navigation" class="fixed-top d-md-none">
+      <div class="container">
+        <div class="logo float-left">
+          <a href="#intro" class="scrollto"
+            ><img src="images/blue-logo.png" alt="" class="img-fluid"
+          /></a>
+                        </div>
+
+                        <nav class="main-nav float-center d-none d-md-none">
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="process.html">Process</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+            </div>
     </div>
     <!-- .main-nav -->
     <!-- end of navbar -->
     <!-- end of navigation -->
 
-    <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li>About Us</li>
-    </ul>
+
 
     <!-- Header -->
     <header id="header" class="p-header">
@@ -84,61 +172,117 @@
 
     <!-- About Us -->
 
-    <div class="container founder">
-        <header class="section-header">
-            <h3 class="section-title text-left">About Us</h3>
-        </header>
-        <hr>
-        <div class="row">
+    <section class="text-center about">
+        <h1 class="text-uppercase" style="color:#335c94">About US</h1>
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                    <span class="fas fa-user mb-4"></span>
 
-            <div class="col-lg-6">
-                <!-- Card -->
-                <div class="card">
-                    <img class="card-image" src="images/kurt.jpg" alt="alternative" />
+                    <p class="lead">Loft conversion specialist and company founder, Kurtis Knightley has developed a customer centric approach to every job his team completes.</p>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="about-founder">
+                <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                    <span class="fas fa-users mb-4"></span>
+                    <p class="lead">With their reliable work ethic, friendly attitude and passion for what they do, Kurtis and his team pride themselves on their high standards. </p>
+                </div>
+                <div class="clearfix visible-md-block visible-sm-block"></div>
+                <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                    <span class="fas fa-tools mb-4"></span>
+                    <p class="lead">The team of skilled Architects, Electricians, Plumbers and Tilers collaborate with one another to ensure that every project Ridgeline Lofts take on is executed to a faultless standard.</p>
+                </div>
 
-                    <p class=""> Loft conversion specialist and company founder, Kurtis Knightley has developed a customer centric approach to every job his team completes. With their reliable work ethic, friendly attitude and passion for what they do, Kurtis and
-                        his team pride themselves on their high standards. The team of skilled Architects, Electricians, Plumbers and Tilers collaborate with one another to ensure that every project Ridgeline Lofts take on is executed to a faultless standard.
-                    </p>
-                </div>
             </div>
-            <!-- end of card -->
+
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <div class="container mt-5 about-content">
 
-        <header class="section-header">
-            <h3 class="section-title text-left">Our Approach</h3>
+        <header class="section-header ">
+            <h3 class="section-title text-left ">Our Approach</h3>
         </header>
 
         <hr>
         <div class="row">
 
+            <div class="col-md-12">
+                <p class="text-left about-text ">
+                    At Ridgeline Lofts we work closely with our customers every step of the way. Offering professional advice and taking all of your ideas into account, we strive to make the duration of the build a hassle and stress free experience for you.
+                </p>
+                <p class="text-left about-text ">
+                    We understand getting a loft conversion or having any type of building work done on your home is not only a big commitment, but can be nerve racking to some. Which is why we are always on hand to put your mind at ease, simply give us a call to discuss
+                    any questions you may have regarding the build. </p>
+                <p class="text-left about-text ">
+                    Ridgeline Lofts use only the highest quality materials and respected, quality tradesmen who are the best in their fields and have positive reputations. All of the tradesmen we work with are fully insured, giving you complete reassurance and peace of mind.
+                </p>
+                <p class="text-left about-text ">
+                    Ridgeline Lofts will treat your home as if it was our own. At the end of every working day we will clean the site from top to bottom. During the build we will also do our upmost to minimise the impact on your daily life, apart from the general noise from
+                    power tools etc, there will be very minimal disruption. </p>
+                <p class="text-left about-text ">
+                    We take great care when working in your home, we take all the necessary precautions to protect your floors, carpets and walls making sure no damage is made. We will keep things tidy and are professional at all times. </p>
+                <p class="text-left about-text ">
+                    No hidden charges. Our pricing structure is clear and easy to understand, every quote is detailed and personal to you and your ideas.</p>
+                <p class="text-left about-text ">
+                    All of our work has a three year guarantee for complete peace of mind. </p>
+                <p class="text-left about-text ">
+                    If you would like to speak to some of our previous customers regarding their build, we can arrange this. We have many existing customers who hold us in high regard, who would be delighted to share their loft conversion experience with you. </p>
+            </div>
 
-            <p class="text-left about-text">
-                At Ridgeline Lofts we work closely with our customers every step of the way. Offering professional advice and taking all of your ideas into account, we strive to make the duration of the build a hassle and stress free experience for you.
-            </p>
-            <p class="text-left about-text">
-                We understand getting a loft conversion or having any type of building work done on your home is not only a big commitment, but can be nerve racking to some. Which is why we are always on hand to put your mind at ease, simply give us a call to discuss
-                any questions you may have regarding the build. </p>
-            <p class="text-left about-text">
-                Ridgeline Lofts use only the highest quality materials and respected, quality tradesmen who are the best in their fields and have positive reputations. All of the tradesmen we work with are fully insured, giving you complete reassurance and peace of mind.
-            </p>
-            <p class="text-left about-text">
-                Ridgeline Lofts will treat your home as if it was our own. At the end of every working day we will clean the site from top to bottom. During the build we will also do our upmost to minimise the impact on your daily life, apart from the general noise from
-                power tools etc, there will be very minimal disruption. </p>
-            <p class="text-left about-text">
-                We take great care when working in your home, we take all the necessary precautions to protect your floors, carpets and walls making sure no damage is made. We will keep things tidy and are professional at all times. </p>
-            <p class="text-left about-text">
-                No hidden charges. Our pricing structure is clear and easy to understand, every quote is detailed and personal to you and your ideas.</p>
-            <p class="text-left about-text">
-                All of our work has a three year guarantee for complete peace of mind. </p>
-            <p class="text-left about-text">
-                If you would like to speak to some of our previous customers regarding their build, we can arrange this. We have many existing customers who hold us in high regard, who would be delighted to share their loft conversion experience with you. </p>
+
+            <!-- end of col -->
+        </div>
+        <header class="section-header ">
+            <h3 class="section-title text-left ">Accredations</h3>
+        </header>
+
+        <hr>
+        <div class="row">
+
+            <div class="col-md-12">
+                <h5>FMB </h5>
+                <p class="text-left about-text ">
+                    We are proud members of the Federation of Master Builders. </p>
+                <p class="text-left about-text ">
+                    What is the Federation of Master Builders (FMB)? </p>
+                <p class="text-left about-text ">
+                    The Federation of Master Builders is the largest trade association in the UK construction industry, representing thousands of firms in the UK. Running for over 75 years, the FMB has championed continuous improvement in building standards. </p>
+                <p class="text-left about-text ">
+                    The FMB goes beyond simple checks and ratings; we independently inspect and vet our members upon joining to provide credible proof of their calibre. </p>
+                <p class="text-left about-text ">
+                    The Master Builder logo represents trust, quality, protection and experience. As a homeowner you are assured of a better result, knowing you are working with the best builders.</p>
+                <p class="text-left about-text ">
+                    Choosing who builds or improves your home is an important decision. At Ridgeline Lofts we have achieved the status of Master Builder. This goes beyond “checked” or “rated” and demonstrates my company has been professionally vetted by the Federation of
+                    Master Builders (FMB), the UK’s largest trade organisation in the building industry. </p>
+                <p class="text-left about-text ">
+                    We can provide you with personal references and examples of our building projects, please get in touch for more details, or you can check my membership at www.fmb.org.uk/checkamember</p>
+            </div>
+
+            <div class="col-md-12">
+                <h5>Velux Certified Installer </h5>
+                <p class="text-left about-text ">
+                    Who are Velux? VELUX is the UK’s No.1 in Roof Windows, offering high-end skylights, roof windows and other products, we are able complete your loft conversion with beautiful skylights and stunning flat roof windows. </p>
+                <p class="text-left about-text ">
+                    Velux are a Trustmark scheme operator, so you have the additional comfort and peace of mind that Certified Installers are members of the only government-endorsed scheme for tradesmen. </p>
+                <p class="text-left about-text ">
+                    As Velux Certified Installers we must comply with their stringent and regular checks and assessments including:
+                    <ul>
+                        <li>Examination of their financial records and trading history</li>
+                        <li>Provision of relevant documents such as public liability insurance</li>
+                        <li>Credit checks</li>
+                        <li>References from previous customers</li>
+                    </ul>
+                </p>
+                <p class="text-left about-text ">
+                    As Certified Installers we also undergo on-site inspections from Velux to ensure that the quality of our work meets the Velux standard and agree to a comprehensive code of practice covering conduct and workmanship.</p>
+                <p class="text-left about-text ">
+                    The Master Builder logo represents trust, quality, protection and experience. As a homeowner you are assured of a better result, knowing you are working with the best builders.</p>
+                <p class="text-left about-text ">
+                    Choosing who builds or improves your home is an important decision. At Ridgeline Lofts we have achieved the status of Master Builder. This goes beyond “checked” or “rated” and demonstrates my company has been professionally vetted by the Federation of
+                    Master Builders (FMB), the UK’s largest trade organisation in the building industry. </p>
+                <p class="text-left about-text ">
+                    We can provide you with personal references and examples of our building projects, please get in touch for more details, or you can check my membership at www.fmb.org.uk/checkamember</p>
+            </div>
 
             <!-- end of col -->
         </div>
@@ -149,67 +293,102 @@
 
     <!-- Footer -->
 
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
+    <div class="container">
+        <hr />
+        <div class="row ">
+            <div class="col-md-12 ">
+                <p class="text-center font-weight-bold text-uppercase certificates-title">
+                    Recommended, respected and fully accredited loft conversion specialists.
+                </p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center certificates">
+            <div class="col-md-2">
+                <img class="fmb" src="images/fmb-logo.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img class="trustmark" src="images/trustmark-logo.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img class="velux" src="images/velux.jpg" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img class="gas-safe" src="images/gas-safe.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img class="gas-safe" src="images/niceic.jpg" alt=" " />
+            </div>
+            <div class="col-md-2">
+                <img class="gas-safe" src="images/velux-certified.png" alt=" " />
+            </div>
+        </div>
 
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h3>Ridgeline Lofts</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat
-                            mauris nunc congue.</p>
-                    </div>
+        <hr />
+    </div>
 
-                    <div class="col-lg-4 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+    <div class="container mt-5 mb-5 ">
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="footer-bottom ">
+                    <div class="footer-bottom-content ">
+                        <ul class="footer-social ">
+                            <li>
+                                <a href=" " class="text-uppercase font-weight-bold ">
+                                    <i class="fab fa-facebook-square " style="color: #3b5998 "></i> Follow us on Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href=" " class="text-uppercase font-weight-bold ">
+                                    <i class="fab fa-instagram-square " style="color: #e1306c "></i> Follow us on Instagram
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>
-                            Roydon, UK<br>
-                            <strong>Phone:</strong> 01438 579710<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        <div class="footer-logo ">
+                            <img src="images/blue-logo.png " alt=" " style="height: 5rem " />
                         </div>
-
+                        <div class="clear "></div>
                     </div>
-
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <div class="container mb-4 ">
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="footer-line "></div>
+                <div class="footer-line "></div>
+                <div class="footer-line "></div>
+                <div class="footer-line "></div>
+                <div class="footer-line "></div>
+                <div class="footer-line "></div>
+                <div class="footer-bottom ">
+                    <div class="footer-bottom-content ">
+                        <span style="float: left " class="text-uppercase "><strong>Ridgeline Lofts 2020</strong>
+          </span>
+                        <div class="clear "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- End of Footer -->
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js "></script>
     <!-- jQuery for Bootstrap's JavaScript plugins -->
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
     <!-- Bootstrap framework -->
 
-    <script type="text/javascript" src="js/mobile-nav.js"></script>
+    <script type="text/javascript " src="js/mobile-nav.js "></script>
 
-    <script type="text/javascript" src="wow/wow.min.js"></script>
+    <script type="text/javascript " src="wow/wow.min.js "></script>
 
-    <script type="text/javascript" src="isotope/isotope.pkgd.min.js"></script>
+    <script type="text/javascript " src="isotope/isotope.pkgd.min.js "></script>
 
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js "></script>
 
 </body>
 

@@ -25,14 +25,14 @@
     <meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Bowden Moss</title>
+    <title>Ridgeline Lofts</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- Favicon  -->
@@ -40,111 +40,309 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-    <!-- Navigation -->
-    <div id="navigation" class="fixed-top">
-        <div class="container">
-            <div class="logo float-left">
-                <a href="#intro" class="scrollto"><img src="images/logo.png" alt="" class="img-fluid" /></a>
-            </div>
+    <div class="nav-desktop fixed-top" id="nav-desktop">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header justify-content-center">
+                    <div class="logo">
+                        <a href="index.html" class="scrollto"><img id="nav-logo" src="images/blue-logo.png" alt="" class="img-fluid" /></a>
+                    </div>
+                </div>
 
-            <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
+                <ul class="nav navbar-nav navbar-right align-items-center nav-contact">
+                    <li>
+                        <div class="">
+                            <a href="#" id="nav-contact" class="text-uppercase" style="color: #0998dd"><strong style="color: #335c94"
+                    >Call us for free on:
+                    <span class="number">01279 423864</span></strong
+                  ></a
+                >
+              </div>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <ul class="nav align-items-center justify-content-center" id="nav-top">
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            id="nav-link"
+            href="about.html"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            id="nav-link"
+            href="loft-conversions.html"
+            >Loft Conversions</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="process.html"
+            id="nav-link"
+            >Process</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="portfolio.html"
+            id="nav-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="gallery.html"
+            id="nav-link"
+            >Gallery</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="testimonials.html"
+            id="nav-link"
+            >Testimonials</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="faq.html"
+            id="nav-link"
+            >FAQ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-uppercase font-weight-bold"
+            href="contact.html"
+            id="nav-link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div id="navigation" class="fixed-top d-md-none">
+      <div class="container">
+        <div class="logo float-left">
+          <a href="#intro" class="scrollto"
+            ><img src="images/blue-logo.png" alt="" class="img-fluid"
+          /></a>
+                        </div>
+
+                        <nav class="main-nav float-center d-none d-md-none">
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="process.html">Process</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+            </div>
     </div>
     <!-- .main-nav -->
     <!-- end of navbar -->
     <!-- end of navigation -->
 
-    <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li>Gallery</li>
-    </ul>
+    <!-- Header -->
+    <header id="header" class="p-header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="text-container">
+                            <div class="home-logo-div d-flex justify-content-center mb-5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
 
-    <div class="container-fluid">
+    <!-- Page Content -->
+    <div class="container gallery-page mt-5">
+        <header class="section-header">
+            <h3 class="section-title text-left">Gallery</h3>
+        </header>
+        <hr />
+
+        <header class="section-header">
+            <h5 class="section-title text-center">Welwyn</h5>
+        </header>
+        <hr />
+        <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/welwyn2.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+
+    <div class="container">
+        <hr />
         <div class="row">
-            <div class="col-md-12" style="height: 300px;">
+            <div class="col-md-12">
+                <p class="text-center font-weight-bold text-uppercase">
+                    Recommended, respected and fully accredited loft conversion specialists.
+                </p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center certificates">
+            <div class="col-md-2">
+                <img src="images/FMB.png " alt=" " />
+            </div>
+            <div class="col-md-2">
+                <img src="images/trustmark.jpg " alt=" " />
+            </div>
+            <div class="col-md-2">
+                <img src="images/Guild-Emblem-Transparent.png " alt=" " />
+            </div>
+            <div class="col-md-2">
+                <img src="images/velux.jpg " alt=" " />
+            </div>
+            <div class="col-md-2">
+                <img src="images/gas-safe.png " alt=" " />
+            </div>
+        </div>
+
+        <hr />
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <ul class="footer-social">
+                            <li>
+                                <a href=" " class="text-uppercase font-weight-bold">
+                                    <i class="fab fa-facebook-square" style="color: #3b5998"></i> Follow us on Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href=" " class="text-uppercase font-weight-bold">
+                                    <i class="fab fa-instagram-square" style="color: #e1306c"></i> Follow us on Instagram
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-logo">
+                            <img src="images/blue-logo.png " alt=" " style="height: 5rem" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h3>NewBiz</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat
-                            mauris nunc congue.</p>
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-line"></div>
+                <div class="footer-line"></div>
+                <div class="footer-line"></div>
+                <div class="footer-line"></div>
+                <div class="footer-line"></div>
+                <div class="footer-line"></div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <span style="float: left" class="text-uppercase"><strong>Ridgeline Lofts 2020</strong>
+              </span>
+                        <div class="clear"></div>
                     </div>
-
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>
-                            A108 Adam Street <br> New York, NY 535022<br> United States <br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- End of Footer -->
+    <!-- End of Footer -->
 
-        <!-- Scripts -->
-        <script src="js/jquery.min.js"></script>
-        <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
 
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Bootstrap framework -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
 
-        <script type="text/javascript" src="js/mobile-nav.js"></script>
+    <script src="slick/slick.js"></script>
 
-        <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/mobile-nav.js"></script>
 
-        <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="wow/wow.min.js"></script>
+
+    <script type="text/javascript" src="isotope/isotope.pkgd.min.js"></script>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

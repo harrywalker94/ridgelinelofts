@@ -30,7 +30,7 @@ a:hover {
     content: "";
     display: block;
     height: 100px;
-    margin: -30px 0 0;
+    margin: -100px 0 0;
 }
 
 .title {
@@ -204,6 +204,10 @@ video {
     font-size: 1.2rem;
 }
 
+.number {
+    color: #0998dd;
+}
+
 #nav-top {
     height: 6.5rem;
 }
@@ -215,17 +219,17 @@ video {
 }
 
 .logo a img {
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .nav-link {
-    color: #989898;
+    color: #0998dd;
     transition: .2s all ease;
 }
 
 .nav-link:hover {
-    color: #0998dd;
-    border-bottom: 2px solid #989898;
+    color: #335c94;
+    border-bottom: 2px solid #0998dd;
     margin-bottom: 5px;
 }
 
@@ -653,10 +657,47 @@ video {
     color: #0998dd;
 }
 
-.certificates div img {
-    padding: 0rem 2rem;
-    width: 100%;
-    height: 100px
+.certificates-title {
+    color: #0998dd;
+}
+
+.certificates div {
+    display: flex;
+    align-items: center;
+}
+
+.certificates div .fmb {
+    padding: 0rem 1rem 0rem 0rem;
+    max-width: 100%;
+    width: 120px;
+    height: 150px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates div .trustmark {
+    padding: 0rem 0rem;
+    max-width: 100%;
+    width: 400px;
+    height: 100px;
+}
+
+.certificates div .velux {
+    padding: 0rem 1rem;
+    max-width: 100%;
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.certificates div .gas-safe {
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -736,6 +777,13 @@ video {
     margin: 0;
     color: #335c94;
     padding: 0 0 3px 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-content div {
+    display: flex;
+    justify-content: center;
 }
 
 .clear {
@@ -746,14 +794,23 @@ video {
     float: left;
 }
 
-.footer-social li a {}
+.footer-social li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 .footer-social li a i {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
 }
 
 .footer-logo {
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -772,79 +829,86 @@ video {
 
 /*******************************************************************************************************/
 
-@media (max-width: 768px) {
-    .founder {
-        margin-top: 4rem;
-    }
-    .about-founder {
-        margin-top: 0rem;
-        text-align: center;
-    }
-}
-
 .about-text {
     margin-bottom: 2rem;
     text-align: left;
+    color: #0998dd;
+    font-weight: 600;
 }
 
-.founder {
-    padding: 3rem 0;
+.about-content ul li {
+    list-style: circle;
+    color: #0998dd;
+    font-weight: 600;
 }
 
-.founder h2 {
-    margin-bottom: 1rem;
+.about {
+    cursor: pointer;
+    background-color: #E6F4FB;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
-.founder .card {
-    max-width: 100%;
-    max-height: 100%;
-    height: 22rem;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
-    padding: .8rem;
-    border: 3px solid #023567;
-    border-radius: 0.5rem;
-    background: transparent;
+@media (max-width: 768px) {
+    .about {
+        margin-top: 6rem;
+    }
 }
 
-.founder .card-image {
-    width: 100%;
-    height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 0.5rem;
+.about h1 {
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-.about-founder {
-    margin-top: 5rem;
-    text-align: left;
+.about h2 {
+    opacity: .8;
 }
 
-#about ul li {
-    list-style: none;
+.about span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    background-color: #0998dd;
+    border: 2px solid #335c94;
+    webkit-transition: all .5s ease;
+    moz-transition: all .5s ease;
+    os-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
-#about ul li::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #59a2cf;
-    /* Change the color */
+.about-item:hover span {
+    opacity: 1;
+    border: 2px solid #335c94;
+    font-size: 42px;
+    -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+    -moz-transform: scale(1.1, 1.1) rotate(360deg);
+    -o-transform: scale(1.1, 1.1) rotate(360deg);
+    transform: scale(1.1, 1.1) rotate(360deg);
+}
+
+.about-item:hover h2 {
+    opacity: 1;
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.about .lead {
+    color: #0998dd;
+    font-size: 14px;
     font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */
 }
 
-#about ul li:nth-child(1)::before {
-    content: "";
+.about-content h5 {
+    color: #989898;
 }
 
 
@@ -1026,12 +1090,34 @@ video {
 }
 
 
+/****************************************    09. Services.html     **************************************** /
+
+/*******************************************************************************************************/
+
+.card-body {}
+
+.services h5 {
+    color: #989898;
+}
+
+
+/****************************************    09. Gallery.html     **************************************** /
+
+/*******************************************************************************************************/
+
+.card-body {}
+
+.services h5 {
+    color: #989898;
+}
+
+
 /****************************************    09. Contact.html     **************************************** /
 
 /*******************************************************************************************************/
 
 .contact-content {
-    padding: 4rem;
+    margin-top: 4rem;
 }
 
 .contact-content li {
@@ -1041,6 +1127,14 @@ video {
 .contact-content h1 {
     font-size: 1.2rem;
     color: #23467a;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact-content p {
+    color: #0998dd;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .contact-content ul li::before {
@@ -1073,7 +1167,7 @@ video {
 /*******************************************************************************************************/
 
 .faq-content {
-    padding-top: 10rem;
+    padding-top: 4rem;
 }
 
 h2 {
@@ -1102,7 +1196,7 @@ h2 {
     font-weight: 900;
     font-style: normal;
     font-size: 3rem;
-    color: #023567;
+    color: #335c94;
     float: right;
     margin-top: -12px;
 }
@@ -1115,10 +1209,61 @@ h2 {
     font-size: 1.2rem;
 }
 
+.panel div h3 a {
+    color: #0998dd;
+}
+
+.panel-body p {
+    color: #0998dd;
+    font-weight: 600;
+}
+
 
 /****************************************    11. Process     **************************************** /
 
 /*******************************************************************************************************/
+
+.process-section span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    background-color: #0998dd;
+    border: 2px solid #335c94;
+    webkit-transition: all .5s ease;
+    moz-transition: all .5s ease;
+    os-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.process-item:hover span {
+    opacity: 1;
+    border: 2px solid #335c94;
+    font-size: 42px;
+    -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+    -moz-transform: scale(1.1, 1.1) rotate(360deg);
+    -o-transform: scale(1.1, 1.1) rotate(360deg);
+    transform: scale(1.1, 1.1) rotate(360deg);
+}
+
+.process-item:hover h2 {
+    opacity: 1;
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.process-section .lead {
+    color: #0998dd;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
 
 .page-header {
     border-bottom: 2px solid #b2b7bd;
@@ -1126,6 +1271,19 @@ h2 {
 
 .page-header {
     border-bottom: 2px solid #b2b7bd;
+}
+
+.process h5 {
+    color: #989898;
+}
+
+.timeline h4 {
+    color: #335c94;
+}
+
+.timeline p {
+    color: #0998dd;
+    font-weight: 600;
 }
 
 .timeline {
@@ -1141,7 +1299,7 @@ h2 {
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #023567;
+    background-color: #0998dd;
     left: 50%;
     margin-left: -1.5px;
 }
@@ -1149,6 +1307,12 @@ h2 {
 .timeline>li {
     margin-bottom: 20px;
     position: relative;
+}
+
+.timeline-body ul li {
+    color: #0998dd;
+    font-weight: 600;
+    list-style: circle;
 }
 
 .timeline>li:before,
@@ -1217,7 +1381,7 @@ h2 {
     top: 30px;
     left: 50%;
     margin-left: -10px;
-    background-color: #023567;
+    background-color: #335c94;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -1377,9 +1541,9 @@ h2 {
 /* Portfolio */
 
 .p-header {
-    background: url("../images/hornchurch1.jpg") center center no-repeat;
+    background: url("../images/home-img.jpg") center center no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 80vh;
 }
 
 .p-header .header-content {
@@ -1396,67 +1560,56 @@ h2 {
 /* Portfolio */
 
 
-}
-
 /* end of min-width width 992px */
 
+
 /* Min-width width 1200px */
+
 @media (min-width: 1200px) {
     /* Navigation */
-    
     .navbar-custom {
         padding: 2.125rem 5rem 2.125rem 5rem;
     }
-    
     .navbar-custom.top-nav-collapse {
         padding: 0.5rem 5rem 0.5rem 5rem;
     }
     /* end of navigation */
     /* General Styles */
-    
     .p-heading {
         width: 55%;
     }
     /* end of general styles */
     /* Header */
-    
     .header .header-content {
         padding-top: 12.5rem;
     }
-    
     .header .text-container {
         margin-top: 5.375rem;
         margin-left: 1rem;
         margin-right: 2rem;
     }
-    
     .header .image-container {
         margin-left: 2rem;
         margin-right: 1rem;
     }
     /* Services */
-    
     .cards-1 .card {
         max-width: 100%;
     }
-    
     .cards-1 .col-lg-12 div.card:nth-child(3n+2) {
         margin-right: 2.875rem;
         margin-left: 2.875rem;
     }
     /* end of services */
     /* Portfolio */
-    
     .p-header .header-content {
         padding-top: 12.5rem;
     }
-    
     .p-header .text-container {
         margin-top: 5.375rem;
         margin-left: 1rem;
         margin-right: 2rem;
     }
-    
     .p-header .image-container {
         margin-left: 2rem;
         margin-right: 1rem;
