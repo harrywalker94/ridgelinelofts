@@ -466,13 +466,14 @@ video {
 /*********************/
 
 .header {
-    background-color: #fff;
+    background: url("../images/home-img.jpg") center center no-repeat;
+    background-size: cover;
+    opacity: .9;
+    height: 50vh;
 }
 
 @media (max-width: 768px) {
-    #header {
-        display: none;
-    }
+    #header {}
 }
 
 .header .header-content {
@@ -549,20 +550,18 @@ video {
 
 @media (max-width: 768px) {
     .section-header div {
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
     .section-header div img {
         height: 4rem;
     }
 }
 
-#about {
-    margin-top: 4rem;
-}
+#about {}
 
 @media (max-width: 768px) {
     #about {
-        margin-top: 2rem;
+        margin-top: rem;
     }
 }
 
@@ -917,7 +916,10 @@ video {
 /*******************************************************************************************************/
 
 .p-header {
-    background-color: #fff;
+    background: url("../images/home-img.jpg") center center no-repeat;
+    background-size: cover;
+    opacity: .9;
+    height: 100vh;
 }
 
 .p-header .header-content {
