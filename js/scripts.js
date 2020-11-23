@@ -13,6 +13,8 @@ $(window).on("load", function () {
 
 window.onscroll = function() {scrollFunction()};
 const mobNav = document.querySelector(".navigation");
+const mobDesk = document.querySelector(".nav-desktop");
+
 
 function scrollFunction() {
   var top = window.scrollY;
@@ -22,12 +24,14 @@ function scrollFunction() {
     document.getElementById("nav-logo").style.height = "3.5rem";
     document.getElementById("nav-top").style.height = "5rem";
     mobNav.classList.add('active');
+    mobDesk.classList.add('active');
   } else {
     document.getElementById("nav-desktop").style.padding = "10px 60px";
     document.getElementById("nav-contact").style.fontSize = "1.2rem";
     document.getElementById("nav-logo").style.height = "4.4rem";
     document.getElementById("nav-top").style.height = "6.5rem";
     mobNav.classList.remove('active');
+    mobDesk.classList.remove('active');
   }
 }
 
