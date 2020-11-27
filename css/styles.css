@@ -707,23 +707,19 @@ li {
 
 /*******************************************************************************************************/
 
-.footer-bottom {
-    width: 100%;
-    padding: 0;
-    margin: 7px 0 0 0;
-}
-
-.footer-bottom-content {
-    margin: 0;
+.bottom-text p {
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 600;
     color: #335c94;
-    padding: 0 0 3px 2px;
-    display: flex;
-    justify-content: center;
 }
 
-.footer-bottom-content div {
-    display: flex;
-    justify-content: center;
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
 }
 
 .clear {
