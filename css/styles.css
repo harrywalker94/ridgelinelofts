@@ -87,6 +87,10 @@ li {
     list-style: none;
 }
 
+.fa-star {
+    color: #335c94;
+}
+
 
 /****************************************    02. Navigation     **************************************** /
 
@@ -607,10 +611,10 @@ li {
 }
 
 .certificates div .fmb {
-    padding: 0rem 1rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
     max-width: 100%;
-    width: 120px;
-    height: 150px;
+    width: 50%;
+    height: 100px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -619,23 +623,23 @@ li {
 .certificates div .trustmark {
     padding: 0rem 0rem;
     max-width: 100%;
-    width: 400px;
-    height: 100px;
+    width: 100%;
+    height: 80px;
 }
 
 .certificates div .velux {
     padding: 0rem 1rem;
     max-width: 100%;
-    width: 300px;
-    height: 120px;
+    width: 100%;
+    height: 70px;
     margin: 0 auto;
     justify-content: center;
 }
 
 .certificates div .gas-safe {
     max-width: 100%;
-    width: 120px;
-    height: 120px;
+    width: 60%;
+    height: 90px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -649,6 +653,92 @@ li {
         margin: 1rem;
         width: 200px;
         height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates div .fmb {
+        width: 20%;
+        height: 80px;
+        margin: .5rem;
+    }
+    .certificates div .trustmark {
+        width: 50%;
+        margin: .5rem;
+    }
+    .certificates div .velux {
+        width: 55%;
+        height: 60px;
+        margin: .5rem;
+    }
+    .certificates div .gas-safe {
+        width: 26%;
+        height: 75px;
+        margin: .5rem;
+    }
+}
+
+.about-cert .fmb {
+    width: 100px;
+    height: 140px;
+    float: right;
+    margin: 1rem;
+}
+
+.about-cert .velux {
+    width: 100px;
+    height: 120px;
+    float: right;
+    margin: 1rem;
+}
+
+.about-cert .trustmark {
+    width: 240px;
+    height: 120px;
+    float: right;
+    margin: 1rem;
+}
+
+.about-cert .gas-safe {
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin: 1rem;
+}
+
+.about-cert .nic {
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-cert .fmb {
+        width: 80px;
+        height: 110px;
+        margin: .7rem;
+    }
+    .about-cert .velux {
+        width: 80px;
+        height: 110px;
+        margin: .7rem;
+    }
+    .about-cert .trustmark {
+        width: 140px;
+        height: 90px;
+        margin: .7rem;
+    }
+    .about-cert .gas-safe {
+        width: 80px;
+        height: 100px;
+        margin: .7rem;
+    }
+    .about-cert .nic {
+        width: 120px;
+        height: 120px;
+        float: right;
+        margin: 1rem;
     }
 }
 
@@ -1081,12 +1171,12 @@ li {
 .panel-default .panel-title a {
     display: block;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
     .panel-default .panel-title a {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 }
 
@@ -1103,7 +1193,9 @@ li {
 
 @media (max-width: 768px) {
     .panel-default .panel-title a:after {
-        font-size: 1.2rem;
+        font-size: .8rem;
+        top: 0;
+        right: 1px;
     }
 }
 
@@ -1122,6 +1214,7 @@ li {
 .panel-body p {
     color: #0998dd;
     font-weight: 600;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1408,12 +1501,6 @@ li {
 .testimonial9 .owl-theme .owl-dots .owl-dot.active span,
 .testimonial9 .owl-theme .owl-dots .owl-dot:hover span {
     background: #335c94;
-}
-
-.testimonial9 .owl-dots {
-    position: absolute;
-    left: -108%;
-    top: 90%;
 }
 
 .testimonial9 .devider {
