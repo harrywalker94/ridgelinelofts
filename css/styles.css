@@ -623,8 +623,8 @@ li {
 .certificates div .trustmark {
     padding: 0rem 0rem;
     max-width: 100%;
-    width: 100%;
-    height: 80px;
+    width: 120%;
+    height: 50px;
 }
 
 .certificates div .velux {
@@ -866,7 +866,7 @@ li {
 }
 
 .about-content ul li {
-    list-style: circle;
+    list-style: circle !important;
     color: #0998dd;
     font-weight: 600;
 }
