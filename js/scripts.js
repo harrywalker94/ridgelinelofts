@@ -33,6 +33,11 @@ function scrollFunction() {
     mobNav.classList.remove('active');
     mobDesk.classList.remove('active');
   }
+  if ($(this).scrollTop() > 50) {
+    $('#back-to-top').fadeIn();
+  } else {
+    $('#back-to-top').fadeOut();
+  }
 }
 
 $('.testi9').owlCarousel({
@@ -52,6 +57,20 @@ $('.testi9').owlCarousel({
     }
   }
 })
+
+/* $(document).ready(function(){ 
+  $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 100) { 
+          $('#scroll').fadeIn(); 
+      } else { 
+          $('#scroll').fadeOut(); 
+      } 
+  }); 
+  $('#scroll').click(function(){ 
+      $("html, body").animate({ scrollTop: 0 }, 600); 
+      return false; 
+  }); 
+}); */
 
 
 /* const mobNav = document.querySelector(".navigation");

@@ -91,6 +91,13 @@ li {
     color: #335c94;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
 
 /****************************************    02. Navigation     **************************************** /
 
