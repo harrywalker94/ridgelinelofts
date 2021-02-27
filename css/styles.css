@@ -83,9 +83,7 @@ hr {
     color: #fff;
 }
 
-li {
-    list-style: none !important;
-}
+li {}
 
 .fa-star {
     color: #335c94;
@@ -1152,6 +1150,17 @@ li {
 .contact-img {
     display: flex;
     justify-content: center;
+    padding: 3rem;
+}
+
+.contact-img img {
+    height: 20rem;
+}
+
+@media (max-width: 768px) {
+    .contact-img img {
+        height: 10rem;
+    }
 }
 
 
