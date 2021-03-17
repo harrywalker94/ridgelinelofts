@@ -467,6 +467,7 @@ li {}
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -474,9 +475,11 @@ li {}
     100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-30px);
     }
+
     60% {
         transform: translateY(-15px);
     }
@@ -500,6 +503,7 @@ li {}
     .section-header div {
         margin-top: 2rem;
     }
+
     .section-header div img {
         height: 4rem;
     }
@@ -580,6 +584,7 @@ li {}
     .video-home {
         height: 300px;
     }
+
     .video-fluid {
         height: 300px;
     }
@@ -654,6 +659,7 @@ li {}
         display: flex;
         justify-content: center;
     }
+
     .certificates div img {
         margin: 1rem;
         width: 200px;
@@ -667,15 +673,18 @@ li {}
         height: 80px;
         margin: .5rem;
     }
+
     .certificates div .trustmark {
         width: 50%;
         margin: .5rem;
     }
+
     .certificates div .velux {
         width: 55%;
         height: 60px;
         margin: .5rem;
     }
+
     .certificates div .gas-safe {
         width: 22%;
         height: 75px;
@@ -724,21 +733,25 @@ li {}
         height: 110px;
         margin: .7rem;
     }
+
     .about-cert .velux {
         width: 80px;
         height: 110px;
         margin: .7rem;
     }
+
     .about-cert .trustmark {
         width: 110px;
         height: 40px;
         margin: .7rem;
     }
+
     .about-cert .gas-safe {
         width: 80px;
         height: 100px;
         margin: .7rem;
     }
+
     .about-cert .nic {
         width: 120px;
         height: 120px;
@@ -756,6 +769,13 @@ li {}
     color: #0998dd;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+h1.section-title {
+    color: #0998dd;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .slider {
@@ -792,6 +812,7 @@ li {}
     .gallery img {
         height: 300px;
     }
+
     .galleryTwo img {
         height: 300px;
     }
@@ -845,6 +866,7 @@ li {}
     .footer-content span {
         font-size: 1rem;
     }
+
     .footer-content li a {
         font-size: .8rem;
     }
@@ -1458,6 +1480,7 @@ li {}
     .timeline-title {
         font-size: 1rem;
     }
+
     .timeline-body ul li {
         font-size: .55rem;
     }
@@ -1560,19 +1583,23 @@ li {}
 /* Min-width width 768px */
 
 @media (min-width: 768px) {
+
     /* Header */
     .header .header-content {
         padding-top: 10.5rem;
     }
+
     .header h1 {
         font-size: 3rem;
         line-height: 3.5rem;
     }
+
     #slider div {
         width: 100%;
         height: 40rem;
         margin: 0 auto;
     }
+
     #slider div img {
         width: 100%;
         height: 100%;
@@ -1595,7 +1622,7 @@ li {}
 /* Services */
 
 
-}
+
 .cards-1 .col-lg-12 div.card:nth-child(3n+2) {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -1608,10 +1635,12 @@ li {}
     opacity: .9;
     height: 80vh;
 }
+
 .p-header .header-content {
     padding-top: 11.5rem;
     text-align: left;
 }
+
 .p-header .text-container {
     margin-top: 3rem;
     margin-bottom: 0;
@@ -1624,53 +1653,57 @@ li {}
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
     /* General Styles */
-    
+
     .p-heading {
         width: 55%;
     }
+
     /* end of general styles */
     /* Header */
-    
+
     .header .header-content {
         padding-top: 12.5rem;
     }
-    
+
     .header .text-container {
         margin-top: 5.375rem;
         margin-left: 1rem;
         margin-right: 2rem;
     }
-    
+
     .header .image-container {
         margin-left: 2rem;
         margin-right: 1rem;
     }
+
     /* Services */
-    
+
     .cards-1 .card {
         max-width: 100%;
     }
-    
+
     .cards-1 .col-lg-12 div.card:nth-child(3n+2) {
         margin-right: 2.875rem;
         margin-left: 2.875rem;
     }
+
     /* end of services */
     /* Portfolio */
-    
+
     .p-header .header-content {
         padding-top: 12.5rem;
     }
-    
+
     .p-header .text-container {
         margin-top: 5.375rem;
         margin-left: 1rem;
         margin-right: 2rem;
     }
-    
+
     .p-header .image-container {
         margin-left: 2rem;
         margin-right: 1rem;
     }
+
     /* End Portfolio */
 }
